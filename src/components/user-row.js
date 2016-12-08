@@ -13,7 +13,11 @@ export default function(props){
                 height="30"
                 />
             </td>
-            <td>{props.user.username}</td>
+            <td>
+                <a href={`https://www.freecodecamp.com/${props.user.username}`} target="_blank">
+                    {props.user.username}
+                </a>
+            </td>
             <td className="text-center">{props.user.alltime}</td>
             <td className="text-center">{props.user.recent}</td>
         </tr>
